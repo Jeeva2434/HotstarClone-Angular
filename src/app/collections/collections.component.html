@@ -1,0 +1,97 @@
+<div class="bg-container">
+
+
+<app-watchlist></app-watchlist>
+	
+
+<!-- collection first  -->
+
+<h5 class="header1">Latest & Trending</h5>
+
+<div id="carouselExampleControlsNoTouching" class="carousel slide" data-touch="false" data-interval="false">
+  <div class="carousel-inner">
+    
+	 
+			<div class="carousel-item active">	
+		   	<div class="carousel-container">
+				
+				 <div *ngFor="let list of latestMovie">
+				  	<img   routerLink="/display"src="{{list.imgUrl}}" (click)="onSelect(list)" class="d-block" alt="...">
+			  	</div>
+				
+		  	</div>
+	   	</div>
+	</div>
+
+  <!-- <button class="carousel-control-prev" type="button" data-target="#carouselExampleControlsNoTouching" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-target="#carouselExampleControlsNoTouching" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </button> -->
+</div>
+
+<!-- collection 2 -->
+
+<h5 class="header1">Popular Shows</h5>
+
+<div id="carouselExampleControlsNoTouching" class="carousel slide" data-touch="false" data-interval="false">
+  <div class="carousel-inner">
+    
+	 
+			<div class="carousel-item active">	
+		   	<div class="carousel-container">
+				
+				  <div *ngFor="let list of popularShows">
+				  	<img   routerLink="/display"src="{{list.picImg}}" (click)="onSelectImage(list)" class="d-block" alt="...">
+			  	</div>
+				
+		  	</div>
+	   	</div>
+
+	</div>
+
+  <!-- <button class="carousel-control-prev" type="button" data-target="#carouselExampleControlsNoTouching" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-target="#carouselExampleControlsNoTouching" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </button> -->
+</div>
+
+
+<!-- collection 3 -->
+<h5 class="header1">Popular in Sports</h5>
+
+<div id="carouselExampleControlsNoTouching" class="carousel slide" data-touch="false" data-interval="false">
+  <div class="carousel-inner">
+    
+	 
+			<div class="carousel-item active">	
+		   	<div class="carousel-container">
+				
+				 <div *ngFor="let list of sportsField">
+				  	<img   routerLink="/display"src="{{list.picImg}}" (click)="onSelectSport(list)" class="d-block" alt="...">
+			  	</div>
+				
+		  	</div>
+	   	</div>
+	</div>
+
+  <!-- <button class="carousel-control-prev" type="button" data-target="#carouselExampleControlsNoTouching" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-target="#carouselExampleControlsNoTouching" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </button> -->
+</div>
+
+
+
+</div>

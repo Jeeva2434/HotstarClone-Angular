@@ -1,0 +1,67 @@
+<div class="filteredCategories">
+	<!-- <div *ngFor="let item of filteredItem">
+		  <h1>{{item.duration}}</h1>
+			<h3>{{item.type}}</h3>
+			<button (click)="addWatch(item)">watch list</button>
+			<img src="{{item.picImg}}" >
+
+	</div> -->
+			  
+			<div *ngFor="let item of filteredItem ">
+
+				<div class="carousel-item-divider">
+					<div class="subCaption">
+						<div class="subCaption-container">
+			        <h2>{{item.picName}}</h2>
+					   	<h5>{{item.duration}}</h5>
+					   	<p>{{item.type}}</p>
+					  	<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro in ipsum expedita ipsa. Tempore modi dolorum et vitae enim animi.</p>
+					  	<div class="watchPlay">
+						    <button (click)="addWatch(item)"><i class="fa-solid fa-circle-plus"></i> watch list</button>
+						    <h6 class="play" routerLink="/letsplay"(click)="play(item)" ><i class="fa-solid fa-circle-play"></i>  <span>  Play</span></h6>
+					    </div>	
+					  </div>
+			    </div>
+					<img src="{{item.picImg}}" >
+			  </div>
+<!-- 
+			<div *ngIf="conditionForWatchList">
+
+				<div *ngFor="let item of  filteredWatchItems">
+
+					<div class="carousel-item-divider">
+					<div class="subCaption">
+						<div class="subCaption-container">
+			        <h2>{{item.picName}}</h2>
+					  	<h5>{{item.duration}}</h5>
+						  <p>{{item.type}}</p>
+						  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro in ipsum expedita ipsa. Tempore modi dolorum et vitae enim animi.</p>
+						  <div class="watchPlay">
+						    <button (click)="addWatch(item)"><i class="fa-solid fa-circle-plus"></i> watch list</button>
+						    <h6 class="play"><i class="fa-solid fa-circle-play"></i>  <span>  Play</span></h6>
+					    </div>	
+					  </div>
+			    </div>
+					<img src="{{item.picImg}}" >
+			  </div>
+     </div> -->
+				<!-- <img class="d-block" src="https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/4379/1124379-h-175645dfcc29" alt="First slide"> -->
+
+		  </div>
+      
+		
+
+
+
+
+
+			<!-- <img src="{{item.duration}}" alt=""> -->
+			<!-- <div id="foodContent">
+					<div *ngFor="let star of stars">
+							<img src="{{star.starImg}}" alt="">
+					</div>
+					<h2>{{item.itemName}}</h2>
+					<h3>{{item.rate}}</h3>
+			</div> -->
+			<!-- <button (click)="add(item)">Add to cart</button> -->
+	</div>

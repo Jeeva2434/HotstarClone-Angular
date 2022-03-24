@@ -1,0 +1,21 @@
+
+
+<h5 *ngIf="listlength" class="header1">WatchList</h5>
+
+<div id="carouselExampleControlsNoTouching" class="carousel slide" data-touch="false" data-interval="false">
+		<div class="carousel-inner">
+			
+			<div class="carousel-item active">	
+				<div class="carousel-container">
+					<div *ngFor="let item of watchlist">
+						<!-- <h1>{{item.duration}}</h1>
+						<h3>{{item.type}}</h3>
+						<h3>{{item.picName}}</h3> -->
+						<img routerLink="/display" src="{{item.picImg}}"  (click)="onSelectWatch(item)" class="d-block" alt="...">
+				  </div>
+		    </div>
+      </div>
+		
+		</div>
+</div>
+

@@ -1,0 +1,52 @@
+.carousel-item{
+	/* padding: 10px 5px; */
+	height: 400px;
+	background-color: black;
+	cursor: pointer;
+}
+.carousel-item-divider{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	background-color: rgb(15, 16, 27);
+	color: white;
+}
+.carousel-item-divider img{
+	width: 60%;
+	height: 100%;
+}
+.subCaption{
+	width: 40%;
+}
+.subCaption-container{
+	margin: 80px 0 0 150px;
+	width: 60%;
+  height: auto;	
+}
+.subCaption-container h5{
+	font-weight: bold;
+	font-size: 2rem;
+} 
+.subCaption-container p:first-of-type{
+	color: rgb(126, 124, 124);
+	font-weight:500;
+	padding: 5px 0;
+}
+.subCaption-container p:last-of-type{
+ text-align: justify;
+ 
+}
+.live{
+	color: red;
+}
+
+
+
+
+
+
+
+
+
+
+

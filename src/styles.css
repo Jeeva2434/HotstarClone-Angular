@@ -1,1 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+
+.bg-container{
+	background-color: black;
+	padding-bottom: 50px;
+}
+.bg-container .header1{
+	color:white;
+  padding: 15px 10px;
+}
+.carousel-container{
+	display: flex;
+}
+.carousel-container img{
+	width:100%;
+  height: 150px;
+  padding: 0 5px;
+}
+.carousel-container img:hover{
+	position: relative;
+	bottom: 12px;
+	left: 2px;
+	overflow: visible;
+	z-index: 1000;
+	cursor: pointer;
+}
+

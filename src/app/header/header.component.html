@@ -1,0 +1,44 @@
+<nav class="navbar navbar-expand-lg navbar-light ">
+  <a class="navbar-brand"  routerLink="slider"><img src="https://cdn4.vectorstock.com/i/1000x1000/69/63/movie-clapper-board-in-flat-style-vector-20466963.jpg"><span> RoLL</span></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+  
+      <li class="nav-item dropdown">
+        <a class="nav-link " routerLink="tv" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+          TV
+        </a>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link " routerLink="movies" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+          Movies
+        </a>
+      </li>
+
+			<li class="nav-item dropdown">
+        <a class="nav-link" routerLink="/sports"  id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+          Sports
+        </a>
+      </li>
+
+    </ul>
+    <form class="form-inline my-2 my-lg-0 formLine">
+      <input class="form-control mr-sm-2 search" type="search" id="value"placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0 search-btn" routerLink="display"(click)="myFun()"type="button"><img src="https://www.pngall.com/wp-content/uploads/8/Vector-Search.png"></button>
+    </form>
+  </div>
+
+  <div class="account">
+     <div class="account-container">
+        <p class="avatar"><i class="fa-solid fa-user-plus"></i></p>
+        <a routerLink="/registration">SignUp</a>
+        <p *ngIf="user"> hi {{userName}}</p>  
+     </div>
+  </div>
+
+  
+</nav>

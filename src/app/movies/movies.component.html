@@ -1,0 +1,19 @@
+<app-slider-all></app-slider-all>
+<div class="bg-container">
+<h5 class="header1">Latest & Trending</h5>
+
+<div id="carouselExampleControlsNoTouching" class="carousel slide" data-touch="false" data-interval="false">
+  <div class="carousel-inner">
+    
+		<div class="carousel-item active">	
+			<div class="carousel-container">
+				
+				 <div *ngFor="let list of latestMovie">
+				  	<img routerLink="/display" src="{{list.imgUrl}}" (click)="onSelect(list)" class="d-block" alt="...">
+				</div>
+				
+			</div>
+		</div>
+  </div>
+</div>
+</div>
